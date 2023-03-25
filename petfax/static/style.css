@@ -1,0 +1,102 @@
+.hp-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color:blanchedalmond;
+    scroll-behavior: smooth;
+    scroll-margin: 200px;
+}
+
+title {
+    display: none;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+.form-link:hover {
+    transform: scale(1.1);
+}
+
+
+.pet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.pet-container:hover {
+    transform: scale(1.1);
+}
+.hp-pet-photo {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.welcome-title {
+    font-size: 50px;
+}
+
+.show-body {
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-pet-name {
+    font-size: 50px;
+}
+.show-didyouknow {
+    margin-top: -10px;
+}
+.show-fact {
+    margin-top: -5px;
+}
+
+.show-pet-photo {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.form-body {
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-name {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.form-input {
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+.input-button {
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+
+

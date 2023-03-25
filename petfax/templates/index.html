@@ -10,14 +10,21 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body>
-    <h1>Welcome to PetFax</h1>
+  <body class="hp-body">
+    <h1 class="welcome-title">Welcome to PetFax</h1>
     {% for pet in pets %}
-    <h2>{{ pet.pet_name }}</h2>
-    <img width="300px" src="{{ pet.pet_photo }}" alt="{{ pet.pet_name }}" />
-    <a href="/pets/{{ pet.pet_id }}">Learn more ⟩</a>
+    <div class="pet-container">
+      <h2 class="hp-pet-name">{{ pet.pet_name }}</h2>
+      <img
+        class="hp-pet-photo"
+        width="300px"
+        src="{{ pet.pet_photo }}"
+        alt="{{ pet.pet_name }}"
+      />
+      <a class="show-link" href="/pets/{{ pet.pet_id }}">Learn more ⟩</a>
+    </div>
     {% endfor %}
-    <div>
+    <div class="form-link">
       <a href="/facts/new">Add More Facts</a>
     </div>
   </body>
