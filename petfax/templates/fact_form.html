@@ -10,14 +10,21 @@
       href="{{ url_for('static', filename='style.css') }}"
     />
   </head>
-  <body>
-    <form>
-      <label>Name</label>
-      <input type="text" />
-      <label>Fun Fact</label>
-      <input type="text" />
-      <input type="submit" value="Submit Fact" />
+  <body class="form-body">
+    <form class="form-container" action="/facts" method="POST">
+      <label class="form-name" for="submitter">Name</label>
+      <input class="form-input" type="text" name="submitter" />
+      <label class="form-name" for="fact">Fun Fact</label>
+      <input class="form-input" type="text" name="fact" />
+      <input class="input-button" type="submit" value="Submit Fact" />
     </form>
     <a href="/pets">Go back</a>
+    <h1>UserFacts</h1>
+    {% for fact in facts %}
+    <div>
+      <p>{{ fact.fact }}</p>
+      <p>Submitted by <strong>{{fact.submitter}}</strong></p>
+    </div>
+    {% endfor %}
   </body>
 </html>

@@ -11,11 +11,11 @@
     />
   </head>
   <body class="form-body">
-    <form class="form-container">
-      <label class="form-name">Name</label>
-      <input class="form-input" type="text" />
-      <label class="form-name">Fun Fact</label>
-      <input class="form-input" type="text" />
+    <form class="form-container" action="/facts" method="POST">
+      <label class="form-name" for="submitter">Name</label>
+      <input class="form-input" type="text" name="submitter" />
+      <label class="form-name" for="fact">Fun Fact</label>
+      <input class="form-input" type="text" name="fact" />
       <input class="input-button" type="submit" value="Submit Fact" />
     </form>
     <a href="/pets">Go back</a>
